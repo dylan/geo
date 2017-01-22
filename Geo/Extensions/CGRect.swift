@@ -5,6 +5,12 @@ extension CGRect {
         return size.height * width
     }
 
+//    private func align(corner: CGRectCorner, to targetCorner: CGRectCorner) -> CGRect {
+//        switch (corner, targetCorner) {
+//            
+//        }
+//    }
+
     private func alignOrigin(edge: CGRectEdge, to targetEdge: CGRectEdge, of rect: CGRect) -> CGPoint? {
         switch (edge, targetEdge) {
         case (.minXEdge, .minXEdge):
