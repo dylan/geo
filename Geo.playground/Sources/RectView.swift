@@ -18,6 +18,10 @@ public class RectView: UIView {
             UIColor.red.setStroke()
             let path = UIBezierPath(rect: rect)
             path.stroke()
+            let originRect = CGRect(origin: rect.origin, size: CGSize(width: 4, height: 4)).offsetBy(dx: -2, dy: -2)
+            let origin = UIBezierPath(ovalIn: originRect)
+            UIColor.red.setFill()
+            origin.fill()
         }
     }
 }

@@ -5,11 +5,10 @@ extension CGRect {
         return size.height * width
     }
 
-//    private func align(corner: CGRectCorner, to targetCorner: CGRectCorner) -> CGRect {
-//        switch (corner, targetCorner) {
-//            
-//        }
-//    }
+    public func align(corner: CGRectCorner, to targetCorner: CGRectCorner, of rect: CGRect) -> CGRect? {
+        return align(edge: corner.edges.0, to: targetCorner.edges.0, of: rect)?
+            .align(edge: corner.edges.1, to: targetCorner.edges.1, of: rect)
+    }
 
     private func alignOrigin(edge: CGRectEdge, to targetEdge: CGRectEdge, of rect: CGRect) -> CGPoint? {
         switch (edge, targetEdge) {
@@ -26,9 +25,17 @@ extension CGRect {
         case (.minYEdge, .maxYEdge):
             return CGPoint(x: minX, y: rect.maxY)
         case (.maxYEdge, .minYEdge):
+            #if os(iOS)
             return CGPoint(x: minX, y: rect.minY - height)
+            #else
+            return CGPoint(x: minX, y: rect.minY + height)
+            #endif
         case (.maxYEdge, .maxYEdge):
-            return CGPoint(x: minX, y: rect.maxY - height)
+            #if os(iOS)
+                return CGPoint(x: minX, y: rect.maxY - height)
+            #else
+                return CGPoint(x: minX, y: rect.maxY + height)
+            #endif
         default:
             print("Cannot align across different axes.")
             return nil

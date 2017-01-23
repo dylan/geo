@@ -3,13 +3,15 @@
 import UIKit
 import Geo
 
+var rect0 = CGRect(origin: CGPoint.zero, size: CGSize(width: 5, height: 5))
 var rect1 = CGRect(x: 50, y: 50, width: 10, height: 10)
 var rect2 = CGRect(x: 80, y: 80, width: 20, height: 20)
 
-rect1.aligning(edge: .maxXEdge, to: .minXEdge, of: rect2)
-rect1.aligning(edge: .minYEdge, to: .minYEdge, of: rect2)
+guard let rect3 = rect1.align(corner: .topRight, to: .topRight, of: rect2) else {
+    fatalError()
+}
 
-(CGRectEdge.maxXEdge, CGRectEdge.minYEdge) ~= (CGRectEdge.maxXEdge, CGRectEdge.maxXEdge)
+rect3
 
 import PlaygroundSupport
-PlaygroundPage.current.liveView = RectView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), with: [rect1, rect2])
+PlaygroundPage.current.liveView = RectView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), with: [rect0, rect2, rect3])
