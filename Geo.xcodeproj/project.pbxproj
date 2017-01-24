@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC108C0D1E356B4700317A33 /* CGRectCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC108C0C1E356B4700317A33 /* CGRectCorner.swift */; };
-		FC108C0E1E356B4700317A33 /* CGRectCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC108C0C1E356B4700317A33 /* CGRectCorner.swift */; };
+		FC979F651E3694E9002AC2D9 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC979F641E3694E9002AC2D9 /* CGPoint.swift */; };
 		FCFB171B1E3566CE00DDC927 /* Geo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFB17111E3566CE00DDC927 /* Geo.framework */; };
 		FCFB17201E3566CE00DDC927 /* GeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB171F1E3566CE00DDC927 /* GeoTests.swift */; };
 		FCFB17221E3566CE00DDC927 /* Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFB17141E3566CE00DDC927 /* Geo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC108C0C1E356B4700317A33 /* CGRectCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectCorner.swift; sourceTree = "<group>"; };
+		FC979F641E3694E9002AC2D9 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		FCFB17111E3566CE00DDC927 /* Geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFB17141E3566CE00DDC927 /* Geo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geo.h; sourceTree = "<group>"; };
 		FCFB17151E3566CE00DDC927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				FCFB172D1E35677600DDC927 /* CGRect.swift */,
-				FC108C0C1E356B4700317A33 /* CGRectCorner.swift */,
+				FC979F641E3694E9002AC2D9 /* CGPoint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC108C0D1E356B4700317A33 /* CGRectCorner.swift in Sources */,
+				FC979F651E3694E9002AC2D9 /* CGPoint.swift in Sources */,
 				FCFB172E1E35677600DDC927 /* CGRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC108C0E1E356B4700317A33 /* CGRectCorner.swift in Sources */,
 				FCFB17201E3566CE00DDC927 /* GeoTests.swift in Sources */,
 				FCFB172F1E35677600DDC927 /* CGRect.swift in Sources */,
 			);
