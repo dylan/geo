@@ -83,12 +83,19 @@ public enum Corner {
 
 extension CGRect {
 
-    init(origin: CGPoint, width: CGFloat, height: CGFloat) {
+    public init(origin: CGPoint, width: CGFloat, height: CGFloat) {
         self = CGRect(x: origin.x, y: origin.x, width: width, height: height)
     }
 
-    init(corner: Corner, width: CGFloat, height: CGFloat) {
+    public init(corner: Corner, width: CGFloat, height: CGFloat) {
         self = CGRect(origin: corner.cgPoint, width: width, height: height)
+    }
+
+    public init(topLeft: CGPoint, bottomRight: CGPoint) {
+        self = CGRect(x: topLeft.x,
+                      y: topLeft.y,
+                      width: bottomRight.x + topLeft.x,
+                      height: topLeft.y + bottomRight.y)
     }
 
     /// Returns the y value for the top side of the CGRect.
@@ -129,13 +136,6 @@ extension CGRect {
 
     public var bottomLeft: Corner {
         return Corner.bottomLeft(of: self)
-    }
-
-    public init(topLeft: CGPoint, bottomRight: CGPoint) {
-        self = CGRect(x: topLeft.x,
-                      y: topLeft.y,
-                  width: bottomRight.x + topLeft.x,
-                 height: topLeft.y + bottomRight.y)
     }
 
     public mutating func align(_ corner: Corner, to targetCorner: Corner) {

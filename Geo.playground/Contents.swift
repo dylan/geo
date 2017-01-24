@@ -47,6 +47,10 @@ rect1.area
 
 rect1.align(rect1.topLeft, to: rect2.bottomRight)
 
+distance(CGPoint.zero, CGPoint(x: 1, y: 1))
+midpoint(CGPoint.zero, CGPoint(x: 1, y: 1))
+
+
 let displayRects = [rect1, rect2]
 
 import PlaygroundSupport
