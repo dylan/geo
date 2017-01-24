@@ -51,7 +51,9 @@ extension CGRect {
 
 rect1.align(.topLeft(of: rect1), to: .bottomRight(of: rect2))
 
-let displayRects = [rect1, rect2]
+let rect3 = rect1.aligning(.left(of: rect1), to: .right(of: rect1))
+
+let displayRects = [rect1, rect2, rect3]
 
 import PlaygroundSupport
 PlaygroundPage.current.liveView = RectView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), with: displayRects)

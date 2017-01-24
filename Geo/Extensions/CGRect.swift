@@ -6,6 +6,16 @@ public enum Edge {
     case bottom(of: CGRect)
     case left(of: CGRect)
 
+    public var cgRect: CGRect {
+        switch self {
+        case .top(let rect),
+             .right(let rect),
+             .bottom(let rect),
+             .left(let rect):
+            return rect
+        }
+    }
+
     public var cgFloat: CGFloat {
         switch self {
         case .top(let rect):
@@ -33,6 +43,16 @@ public enum Corner {
     case topRight(of: CGRect)
     case bottomRight(of: CGRect)
     case bottomLeft(of: CGRect)
+
+    public var cgRect: CGRect {
+        switch self {
+            case .topLeft(let rect),
+                 .topRight(let rect),
+                 .bottomRight(let rect),
+                 .bottomLeft(let rect):
+            return rect
+        }
+    }
 
     public var edges: (Edge, Edge) {
         switch self {
@@ -112,42 +132,59 @@ extension CGRect {
     }
 
     public init(topLeft: CGPoint, bottomRight: CGPoint) {
-        self = CGRect(x: topLeft.x, y: topLeft.y, width: bottomRight.x + topLeft.x, height: topLeft.y + bottomRight.y)
+        self = CGRect(x: topLeft.x,
+                      y: topLeft.y,
+                  width: bottomRight.x + topLeft.x,
+                 height: topLeft.y + bottomRight.y)
     }
 
     public mutating func align(_ corner: Corner, to targetCorner: Corner) {
-        guard let result = self.aligning(corner.edges.0, to: targetCorner.edges.0)?
-                               .aligning(corner.edges.1, to: targetCorner.edges.1)
-        else {
-            return
-        }
-        self = result
+        self = self.aligning(corner.edges.0, to: targetCorner.edges.0)
+                   .aligning(corner.edges.1, to: targetCorner.edges.1)
+    }
+
+    public func aligning(_ corner: Corner, to targetCorner: Corner) -> CGRect {
+        return self.aligning(corner.edges.0, to: targetCorner.edges.0)
+                   .aligning(corner.edges.1, to: corner.edges.1)
     }
 
     public mutating func align(_ edge: Edge, to targetEdge: Edge) {
-        guard let result = self.aligning(edge, to: targetEdge) else {
-            return
-        }
-        self = result
+        self = self.aligning(edge, to: targetEdge)
     }
 
-    public func aligning(_ edge: Edge, to targetEdge: Edge) -> CGRect? {
+    public func aligning(_ edge: Edge, to targetEdge: Edge) -> CGRect {
         switch (edge, targetEdge) {
         case (.left, .left),
              (.left, .right):
-            return CGRect(x: targetEdge.cgFloat, y: top.cgFloat, width: width, height: height)
+            return CGRect(x: targetEdge.cgFloat,
+                          y: top.cgFloat,
+                      width: width,
+                     height: height)
+
+
         case (.right, .left),
              (.right, .right):
-            return CGRect(x: targetEdge.cgFloat - width, y: top.cgFloat, width: width, height: height)
+            return CGRect(x: targetEdge.cgFloat - width,
+                          y: top.cgFloat,
+                      width: width,
+                     height: height)
+
         case (.top, .top),
              (.top, .bottom):
-            return CGRect(x: left.cgFloat, y: targetEdge.cgFloat, width: width, height: height)
+            return CGRect(x: left.cgFloat,
+                          y: targetEdge.cgFloat,
+                      width: width,
+                     height: height)
+
         case (.bottom, .top),
              (.bottom, .bottom):
-            return CGRect(x: left.cgFloat, y: targetEdge.cgFloat - height, width: width, height: height)
+            return CGRect(x: left.cgFloat,
+                          y: targetEdge.cgFloat - height,
+                      width: width,
+                     height: height)
         default:
-            print("Cannot align across axes!")
-            return nil
+            print("Cannot align across edges, no changes made!")
+            return edge.cgRect
         }
     }
 }
