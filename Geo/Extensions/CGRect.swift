@@ -183,7 +183,7 @@ extension CGRect {
                       width: width,
                      height: height)
         default:
-            print("Cannot align across edges, no changes made!")
+            assertionFailure("Cannot align across edges, no changes made!")
             return edge.cgRect
         }
     }
