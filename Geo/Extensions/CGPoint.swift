@@ -24,7 +24,8 @@ extension CGPoint {
         return Geo.midpoint(self, point)
     }
 
-    // MARK: Operators
+    // MARK: - Operators -
+    
     public static func + (left: CGPoint, right: CGPoint) -> CGPoint {
         return CGPoint(x: left.x + right.x, y: left.y + right.y)
     }
@@ -32,6 +33,26 @@ extension CGPoint {
     public static func - (left: CGPoint, right: CGPoint) -> CGPoint {
         return CGPoint(x: left.x - right.x, y: left.y - right.y)
     }
+
+    // MARK: - CGFloat
+
+    public static func + (left: CGPoint, right: CGFloat) -> CGPoint {
+        return CGPoint(x: left.x + right, y: left.y + right)
+    }
+
+    public static func - (left: CGPoint, right: CGFloat) -> CGPoint {
+        return CGPoint(x: left.x - right, y: left.y - right)
+    }
+
+    public static func * (left: CGPoint, right: CGFloat) -> CGPoint {
+        return CGPoint(x: left.x * right, y: left.y * right)
+    }
+
+    public static func / (left: CGPoint, right: CGFloat) -> CGPoint {
+        return CGPoint(x: left.x / right, y: left.y / right)
+    }
+
+    // MARK: - CGVector
 
     public static func + (left: CGPoint, right: CGVector) -> CGPoint {
         return CGPoint(x: left.x + right.dx, y: left.y + right.dy)
@@ -47,21 +68,5 @@ extension CGPoint {
 
     public static func / (left: CGPoint, right: CGVector) -> CGPoint {
         return CGPoint(x: left.x / right.dx, y: left.y / right.dy)
-    }
-
-    public static func + (left: CGPoint, right: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: left.x + CGFloat(right), y: left.y + CGFloat(right))
-    }
-
-    public static func - (left: CGPoint, right: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: left.x - CGFloat(right), y: left.y - CGFloat(right))
-    }
-
-    public static func * (left: CGPoint, right: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: left.x * CGFloat(right), y: left.y * CGFloat(right))
-    }
-
-    public static func / (left: CGPoint, right: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: left.x / CGFloat(right), y: left.y / CGFloat(right))
     }
 }
