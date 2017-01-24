@@ -1,4 +1,4 @@
-import CoreImage
+import CoreGraphics
 
 public enum Edge {
     case top(of: CGRect)
