@@ -24,43 +24,44 @@ extension CGPoint {
         return Geo.midpoint(self, point)
     }
 
-    public static func + (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
-        return CGPoint(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
+    // MARK: Operators
+    public static func + (left: CGPoint, right: CGPoint) -> CGPoint {
+        return CGPoint(x: left.x + right.x, y: left.y + right.y)
     }
 
-    public static func - (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
-        return CGPoint(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
+    public static func - (left: CGPoint, right: CGPoint) -> CGPoint {
+        return CGPoint(x: left.x - right.x, y: left.y - right.y)
     }
 
-    public static func + (lhs: CGPoint, rhs: CGVector) -> CGPoint {
-        return CGPoint(x: lhs.x + rhs.dx, y: lhs.y + rhs.dy)
+    public static func + (left: CGPoint, right: CGVector) -> CGPoint {
+        return CGPoint(x: left.x + right.dx, y: left.y + right.dy)
     }
 
-    public static func - (lhs: CGPoint, rhs: CGVector) -> CGPoint {
-        return CGPoint(x: lhs.x - rhs.dx, y: lhs.y - rhs.dy)
+    public static func - (left: CGPoint, right: CGVector) -> CGPoint {
+        return CGPoint(x: left.x - right.dx, y: left.y - right.dy)
     }
 
-    public static func * (lhs: CGPoint, rhs: CGVector) -> CGPoint {
-        return CGPoint(x: lhs.x * rhs.dx, y: lhs.y * rhs.dy)
+    public static func * (left: CGPoint, right: CGVector) -> CGPoint {
+        return CGPoint(x: left.x * right.dx, y: left.y * right.dy)
     }
 
-    public static func / (lhs: CGPoint, rhs: CGVector) -> CGPoint {
-        return CGPoint(x: lhs.x / rhs.dx, y: lhs.y / rhs.dy)
+    public static func / (left: CGPoint, right: CGVector) -> CGPoint {
+        return CGPoint(x: left.x / right.dx, y: left.y / right.dy)
     }
 
-    public static func + (lhs: CGPoint, rhs: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: lhs.x + CGFloat(rhs), y: lhs.y + CGFloat(rhs))
+    public static func + (left: CGPoint, right: FloatLiteralType) -> CGPoint {
+        return CGPoint(x: left.x + CGFloat(right), y: left.y + CGFloat(right))
     }
 
-    public static func - (lhs: CGPoint, rhs: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: lhs.x - CGFloat(rhs), y: lhs.y - CGFloat(rhs))
+    public static func - (left: CGPoint, right: FloatLiteralType) -> CGPoint {
+        return CGPoint(x: left.x - CGFloat(right), y: left.y - CGFloat(right))
     }
 
-    public static func * (lhs: CGPoint, rhs: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: lhs.x * CGFloat(rhs), y: lhs.y * CGFloat(rhs))
+    public static func * (left: CGPoint, right: FloatLiteralType) -> CGPoint {
+        return CGPoint(x: left.x * CGFloat(right), y: left.y * CGFloat(right))
     }
 
-    public static func / (lhs: CGPoint, rhs: FloatLiteralType) -> CGPoint {
-        return CGPoint(x: lhs.x / CGFloat(rhs), y: lhs.y / CGFloat(rhs))
+    public static func / (left: CGPoint, right: FloatLiteralType) -> CGPoint {
+        return CGPoint(x: left.x / CGFloat(right), y: left.y / CGFloat(right))
     }
 }
