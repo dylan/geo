@@ -118,19 +118,9 @@ extension CGVector {
     }
 }
 
-extension CGVector: CustomPlaygroundQuickLookable {
+// This seems broken, ```.`struct```` doesn't work at all...
+extension CGVector: CustomReflectable {
     public var customMirror: Mirror {
-        return Mirror(self, children: ["dx": dx, "dy": dy], displayStyle: .struct)
-    }
-
-    public var customPlaygroundQuickLook: PlaygroundQuickLook {
-        return PlaygroundQuickLook(reflecting: self)
+        return Mirror(self, children: ["dx": dx, "dy": dy], displayStyle: .set)
     }
 }
-
-extension CGVector: CustomDebugStringConvertible {
-    public var debugDescription: String {
-        return "(\(dx), \(dy))"
-    }
-}
-

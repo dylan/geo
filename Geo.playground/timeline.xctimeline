@@ -2,5 +2,25 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/dylan/github/geo/Geo.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1240&amp;EndingLineNumber=43&amp;StartingLineNumber=43&amp;Timestamp=506983657.670577"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/dylan/github/geo/Geo.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1240&amp;EndingLineNumber=43&amp;StartingLineNumber=43&amp;Timestamp=506983657.67072"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/dylan/github/geo/Geo.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1240&amp;EndingLineNumber=43&amp;StartingLineNumber=43&amp;Timestamp=506983657.67079"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/dylan/github/geo/Geo.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=1240&amp;EndingLineNumber=43&amp;StartingLineNumber=43&amp;Timestamp=506983657.670913"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

@@ -39,9 +39,16 @@ var rect0 = CGRect(origin: CGPoint.zero, size: CGSize(width: 5, height: 5))
 var rect1 = CGRect(x: 10, y: 10, width: 15, height: 15)
 var rect2 = CGRect(x: 80, y: 80, width: 30, height: 30)
 
-//CGVector()
-//var vect1 = CGVector(M_2_PI)
 
+
+var vect1 = CGVector(M_2_PI)
+vect1.integral
+vect1.normalized()
+vect1.integrate()
+vect1.inverse
+vect1.length
+vect1.squared
+vect1.normalize()
 
 rect1.topLeft.cgPoint
 rect1.topRight.cgPoint
