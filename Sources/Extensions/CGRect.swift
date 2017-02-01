@@ -19,23 +19,16 @@ public enum Edge {
     public var cgFloat: CGFloat {
         switch self {
         case .top(let rect):
-            #if os(iOS)
-                return rect.origin.y
-            #else
-                return rect.origin.y + rect.height
-            #endif
+            return rect.minY
         case .right(let rect):
-            return rect.origin.x + rect.width
+            return rect.maxX
         case .bottom(let rect):
-            #if os(iOS)
-                return rect.origin.y + rect.height
-            #else
-                return rect.origin.y
-            #endif
+            return rect.maxY
         case .left(let rect):
-            return rect.origin.x
+            return rect.minX
         }
     }
+
     public var midPoint: CGPoint {
         switch self {
         case .top(let rect):
@@ -171,33 +164,21 @@ extension CGRect {
     public func aligning(_ edge: Edge, to targetEdge: Edge) -> CGRect {
         switch (edge, targetEdge) {
         case (.left, .left),
-             (.left, .right):
+             (.left, .right),
+             (.right, .left),
+             (.right, .right):
             return CGRect(x: targetEdge.cgFloat,
                           y: top.cgFloat,
-                      width: width,
-                     height: height)
-
-
-        case (.right, .left),
-             (.right, .right):
-            return CGRect(x: targetEdge.cgFloat - width,
-                          y: top.cgFloat,
-                      width: width,
-                     height: height)
-
+                          width: width,
+                          height: height)
         case (.top, .top),
-             (.top, .bottom):
-            return CGRect(x: left.cgFloat,
-                          y: targetEdge.cgFloat,
-                      width: width,
-                     height: height)
-
-        case (.bottom, .top),
+             (.top, .bottom),
+             (.bottom, .top),
              (.bottom, .bottom):
-            return CGRect(x: left.cgFloat,
-                          y: targetEdge.cgFloat - height,
-                      width: width,
-                     height: height)
+                return CGRect(x: left.cgFloat,
+                              y: targetEdge.cgFloat,
+                              width: width,
+                              height: height)
         default:
             assertionFailure("Cannot align across edges, no changes made!")
             return edge.cgRect
