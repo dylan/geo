@@ -36,6 +36,22 @@ public enum Edge {
             return rect.origin.x
         }
     }
+    public var midPoint: CGPoint {
+        switch self {
+        case .top(let rect):
+            return midpoint(a: rect.topLeft, b: rect.topRight)
+        case .right(let rect):
+            return midpoint(a: rect.topRight, b: rect.bottomRight)
+        case .bottom(let rect):
+            return midpoint(a: rect.bottomLeft, b: rect.bottomRight)
+        case .left(let rect):
+            return midpoint(a: rect.topLeft, b: rect.bottomLeft)
+        }
+    }
+}
+
+public func midpoint(a: Corner, b: Corner) -> CGPoint {
+    return midpoint(a.cgPoint, b.cgPoint)
 }
 
 public enum Corner {
