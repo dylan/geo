@@ -376,6 +376,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.Geo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos macosx watchos appletvos iphonesimulator appletvsimulator watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -399,6 +400,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.Geo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos macosx watchos appletvos iphonesimulator appletvsimulator watchsimulator";
 				SWIFT_VERSION = 3.0;
