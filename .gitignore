@@ -20,3 +20,5 @@ DerivedData
 .DS_Store
 
 Carthage/Build
+
+Geo.framework.zip
