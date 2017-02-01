@@ -5,9 +5,16 @@ Working with CGRects and points can be tedious. Hopefully this lib will make it 
 Eventually I'll put other geometry helper tools for iOS and macOS in here as well.
 
 ## Installation
-Copy the ```Geo``` folder into your project.
+### Carthage
+-   Create a Cartfile in the root of your project with the following contents:
+    ```yaml
+    github "dylan/geo"
+    ```
+-   Run the following:
+    ```
+    $ carthage bootstrap
+    ```
 
-### Coming soon, Carthage.
 
 ## Usage
 ```swift
