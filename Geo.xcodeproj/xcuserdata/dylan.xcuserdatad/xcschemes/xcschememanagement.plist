@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Geo-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Geo-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Geo-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Geo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +27,41 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FC3B67251E42227C0095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B672D1E42227C0095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B67411E42228C0095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B674E1E4223800095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B675B1E42240E0095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B67681E42241F0095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3B67751E4224340095D1A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FCFB17101E3566CD00DDC927</key>
 		<dict>
 			<key>primary</key>

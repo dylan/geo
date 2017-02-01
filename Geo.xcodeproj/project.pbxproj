@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC053E031E37AE1800ED453B /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC053E021E37AE1800ED453B /* CGFloat.swift */; };
-		FC053E051E37B70200ED453B /* Float2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC053E041E37B70200ED453B /* Float2.swift */; };
-		FC053E071E37BA5500ED453B /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC053E061E37BA5500ED453B /* CGVector.swift */; };
-		FC979F651E3694E9002AC2D9 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC979F641E3694E9002AC2D9 /* CGPoint.swift */; };
+		FC3B678A1E4224980095D1A8 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67801E4224980095D1A8 /* CGFloat.swift */; };
+		FC3B678E1E4224980095D1A8 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67801E4224980095D1A8 /* CGFloat.swift */; };
+		FC3B678F1E4224980095D1A8 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67811E4224980095D1A8 /* CGPoint.swift */; };
+		FC3B67931E4224980095D1A8 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67811E4224980095D1A8 /* CGPoint.swift */; };
+		FC3B67941E4224980095D1A8 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67821E4224980095D1A8 /* CGRect.swift */; };
+		FC3B67981E4224980095D1A8 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67821E4224980095D1A8 /* CGRect.swift */; };
+		FC3B67991E4224980095D1A8 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67831E4224980095D1A8 /* CGVector.swift */; };
+		FC3B679D1E4224980095D1A8 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67831E4224980095D1A8 /* CGVector.swift */; };
+		FC3B679E1E4224980095D1A8 /* Float2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67841E4224980095D1A8 /* Float2.swift */; };
+		FC3B67A21E4224980095D1A8 /* Float2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67841E4224980095D1A8 /* Float2.swift */; };
+		FC3B67A31E4224980095D1A8 /* Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3B67851E4224980095D1A8 /* Geo.h */; };
+		FC9CA77D1E4229FF008C255A /* Geo.h in Resources */ = {isa = PBXBuildFile; fileRef = FC3B67851E4224980095D1A8 /* Geo.h */; };
 		FCFB171B1E3566CE00DDC927 /* Geo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFB17111E3566CE00DDC927 /* Geo.framework */; };
 		FCFB17201E3566CE00DDC927 /* GeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB171F1E3566CE00DDC927 /* GeoTests.swift */; };
-		FCFB17221E3566CE00DDC927 /* Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFB17141E3566CE00DDC927 /* Geo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCFB172E1E35677600DDC927 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB172D1E35677600DDC927 /* CGRect.swift */; };
-		FCFB172F1E35677600DDC927 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB172D1E35677600DDC927 /* CGRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +34,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC053E021E37AE1800ED453B /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
-		FC053E041E37B70200ED453B /* Float2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float2.swift; sourceTree = "<group>"; };
-		FC053E061E37BA5500ED453B /* CGVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
-		FC979F641E3694E9002AC2D9 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		FC3B67801E4224980095D1A8 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		FC3B67811E4224980095D1A8 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		FC3B67821E4224980095D1A8 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		FC3B67831E4224980095D1A8 /* CGVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		FC3B67841E4224980095D1A8 /* Float2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float2.swift; sourceTree = "<group>"; };
+		FC3B67851E4224980095D1A8 /* Geo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geo.h; sourceTree = "<group>"; };
+		FC3B67861E4224980095D1A8 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		FC3B67871E4224980095D1A8 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		FC3B67881E4224980095D1A8 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		FC3B67891E4224980095D1A8 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		FCFB17111E3566CE00DDC927 /* Geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCFB17141E3566CE00DDC927 /* Geo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geo.h; sourceTree = "<group>"; };
-		FCFB17151E3566CE00DDC927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCFB171A1E3566CE00DDC927 /* GeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFB171F1E3566CE00DDC927 /* GeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTests.swift; sourceTree = "<group>"; };
 		FCFB17211E3566CE00DDC927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCFB172D1E35677600DDC927 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +69,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC3B677E1E4224980095D1A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B677F1E4224980095D1A8 /* Extensions */,
+				FC3B67851E4224980095D1A8 /* Geo.h */,
+				FC3B67861E4224980095D1A8 /* Info-iOS.plist */,
+				FC3B67871E4224980095D1A8 /* Info-macOS.plist */,
+				FC3B67881E4224980095D1A8 /* Info-tvOS.plist */,
+				FC3B67891E4224980095D1A8 /* Info-watchOS.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FC3B677F1E4224980095D1A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC3B67801E4224980095D1A8 /* CGFloat.swift */,
+				FC3B67811E4224980095D1A8 /* CGPoint.swift */,
+				FC3B67821E4224980095D1A8 /* CGRect.swift */,
+				FC3B67831E4224980095D1A8 /* CGVector.swift */,
+				FC3B67841E4224980095D1A8 /* Float2.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FCFB17071E3566CD00DDC927 = {
 			isa = PBXGroup;
 			children = (
-				FCFB17131E3566CE00DDC927 /* Geo */,
+				FC3B677E1E4224980095D1A8 /* Sources */,
 				FCFB171E1E3566CE00DDC927 /* GeoTests */,
 				FCFB17121E3566CE00DDC927 /* Products */,
 			);
@@ -79,16 +112,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCFB17131E3566CE00DDC927 /* Geo */ = {
-			isa = PBXGroup;
-			children = (
-				FCFB172C1E35676200DDC927 /* Extensions */,
-				FCFB17141E3566CE00DDC927 /* Geo.h */,
-				FCFB17151E3566CE00DDC927 /* Info.plist */,
-			);
-			path = Geo;
-			sourceTree = "<group>";
-		};
 		FCFB171E1E3566CE00DDC927 /* GeoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,18 +121,6 @@
 			path = GeoTests;
 			sourceTree = "<group>";
 		};
-		FCFB172C1E35676200DDC927 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FCFB172D1E35677600DDC927 /* CGRect.swift */,
-				FC979F641E3694E9002AC2D9 /* CGPoint.swift */,
-				FC053E021E37AE1800ED453B /* CGFloat.swift */,
-				FC053E041E37B70200ED453B /* Float2.swift */,
-				FC053E061E37BA5500ED453B /* CGVector.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -117,7 +128,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCFB17221E3566CE00DDC927 /* Geo.h in Headers */,
+				FC3B67A31E4224980095D1A8 /* Geo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +177,7 @@
 		FCFB17081E3566CD00DDC927 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "BVR, LLC";
 				TargetAttributes = {
@@ -211,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9CA77D1E4229FF008C255A /* Geo.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC053E031E37AE1800ED453B /* CGFloat.swift in Sources */,
-				FC979F651E3694E9002AC2D9 /* CGPoint.swift in Sources */,
-				FC053E071E37BA5500ED453B /* CGVector.swift in Sources */,
-				FCFB172E1E35677600DDC927 /* CGRect.swift in Sources */,
-				FC053E051E37B70200ED453B /* Float2.swift in Sources */,
+				FC3B678A1E4224980095D1A8 /* CGFloat.swift in Sources */,
+				FC3B679E1E4224980095D1A8 /* Float2.swift in Sources */,
+				FC3B678F1E4224980095D1A8 /* CGPoint.swift in Sources */,
+				FC3B67941E4224980095D1A8 /* CGRect.swift in Sources */,
+				FC3B67991E4224980095D1A8 /* CGVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3B67931E4224980095D1A8 /* CGPoint.swift in Sources */,
+				FC3B67A21E4224980095D1A8 /* Float2.swift in Sources */,
+				FC3B678E1E4224980095D1A8 /* CGFloat.swift in Sources */,
+				FC3B679D1E4224980095D1A8 /* CGVector.swift in Sources */,
+				FC3B67981E4224980095D1A8 /* CGRect.swift in Sources */,
 				FCFB17201E3566CE00DDC927 /* GeoTests.swift in Sources */,
-				FCFB172F1E35677600DDC927 /* CGRect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +286,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -291,14 +306,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -323,7 +341,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -338,13 +355,16 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};
@@ -352,19 +372,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Geo/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.Geo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos macosx watchos appletvos iphonesimulator appletvsimulator watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Debug;
 		};
@@ -372,18 +395,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Geo/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.Geo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos macosx watchos appletvos iphonesimulator appletvsimulator watchsimulator";
 				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
 			name = Release;
 		};

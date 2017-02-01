@@ -6,8 +6,6 @@
 //  Copyright © 2017 BVR, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for Geo.
 FOUNDATION_EXPORT double GeoVersionNumber;
 
