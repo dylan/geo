@@ -1,12 +1,11 @@
 //: Playground - noun: a place where people can play
-
-import Cocoa
 import CoreGraphics
 import Geo
 
 var rect0 = CGRect(origin: CGPoint.zero, size: CGSize(width: 5, height: 5))
 var rect1 = CGRect(x: 10, y: 10, width: 15, height: 15)
 var rect2 = CGRect(x: 80, y: 80, width: 30, height: 30)
+
 
 
 var vect1 = CGVector(M_2_PI)
@@ -35,5 +34,4 @@ CGPoint.zero.distance(to: CGPoint(x: 1, y: 1))
 let displayRects = [rect1, rect2]
 
 import PlaygroundSupport
-let r = NSRect(x: 0, y: 0, width: 200, height: 200)
-PlaygroundPage.current.liveView = RectView(frame: r , with: displayRects)
+PlaygroundPage.current.liveView = RectView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), with: displayRects)
