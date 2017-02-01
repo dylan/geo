@@ -17,7 +17,7 @@
 		FC3B679D1E4224980095D1A8 /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67831E4224980095D1A8 /* CGVector.swift */; };
 		FC3B679E1E4224980095D1A8 /* Float2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67841E4224980095D1A8 /* Float2.swift */; };
 		FC3B67A21E4224980095D1A8 /* Float2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3B67841E4224980095D1A8 /* Float2.swift */; };
-		FC3B67A31E4224980095D1A8 /* Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3B67851E4224980095D1A8 /* Geo.h */; };
+		FC3B67A31E4224980095D1A8 /* Geo.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3B67851E4224980095D1A8 /* Geo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC9CA77D1E4229FF008C255A /* Geo.h in Resources */ = {isa = PBXBuildFile; fileRef = FC3B67851E4224980095D1A8 /* Geo.h */; };
 		FCFB171B1E3566CE00DDC927 /* Geo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFB17111E3566CE00DDC927 /* Geo.framework */; };
 		FCFB17201E3566CE00DDC927 /* GeoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB171F1E3566CE00DDC927 /* GeoTests.swift */; };
@@ -40,10 +40,7 @@
 		FC3B67831E4224980095D1A8 /* CGVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
 		FC3B67841E4224980095D1A8 /* Float2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float2.swift; sourceTree = "<group>"; };
 		FC3B67851E4224980095D1A8 /* Geo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geo.h; sourceTree = "<group>"; };
-		FC3B67861E4224980095D1A8 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		FC3B67871E4224980095D1A8 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		FC3B67881E4224980095D1A8 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		FC3B67891E4224980095D1A8 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		FC4AF4F61E422C9D000B1B68 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCFB17111E3566CE00DDC927 /* Geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFB171A1E3566CE00DDC927 /* GeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFB171F1E3566CE00DDC927 /* GeoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTests.swift; sourceTree = "<group>"; };
@@ -74,10 +71,7 @@
 			children = (
 				FC3B677F1E4224980095D1A8 /* Extensions */,
 				FC3B67851E4224980095D1A8 /* Geo.h */,
-				FC3B67861E4224980095D1A8 /* Info-iOS.plist */,
-				FC3B67871E4224980095D1A8 /* Info-macOS.plist */,
-				FC3B67881E4224980095D1A8 /* Info-tvOS.plist */,
-				FC3B67891E4224980095D1A8 /* Info-watchOS.plist */,
+				FC4AF4F61E422C9D000B1B68 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -418,7 +412,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.GeoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -430,7 +424,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.bvr.GeoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

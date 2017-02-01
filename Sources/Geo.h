@@ -6,11 +6,12 @@
 //  Copyright © 2017 BVR, LLC. All rights reserved.
 //
 
+
 //! Project version number for Geo.
-FOUNDATION_EXPORT double GeoVersionNumber;
+extern double GeoVersionNumber;
 
 //! Project version string for Geo.
-FOUNDATION_EXPORT const unsigned char GeoVersionString[];
+extern const unsigned char GeoVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Geo/PublicHeader.h>
 

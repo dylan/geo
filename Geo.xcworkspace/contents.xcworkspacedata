@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Geo.playground">
+      location = "group:Geo-iOS.playground">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/dylan/Github/Geo/Geo-Mac.playground">
    </FileRef>
    <FileRef
       location = "container:Geo.xcodeproj">
