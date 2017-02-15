@@ -86,3 +86,4 @@ fastlane/test_output
 
 *.xcuserdatad
 *.framework.zip
+build-times.txt
