@@ -14,6 +14,11 @@ public class RectView: UIView {
     }
 
     public override func draw(_ rect: CGRect) {
+        let originCRect = CGRect(origin: CGPoint.zero, size: CGSize(width: 6, height: 6)).offsetBy(dx: -3, dy: -3)
+        let originC = UIBezierPath(ovalIn: originCRect)
+        UIColor.blue.setFill()
+        originC.fill()
+        
         for rect in rects {
             UIColor.red.setStroke()
             let path = UIBezierPath()

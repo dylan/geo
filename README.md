@@ -4,14 +4,17 @@ Working with CGRects and points can be tedious. Hopefully this lib will make it 
 
 Eventually I'll put other geometry helper tools for iOS and macOS in here as well.
 
-**Note**
-Whenever you see "top" or "bottom" Geo will be attempting to figure out the "top" based on how the rect
-would be displayed on screen. Regardless of whether or not the context is flipped. #DontSweatTheOriginsMan
-
 ## Installation
-Copy the ```Geo``` folder into your project.
+### Carthage
+-   Create a Cartfile in the root of your project with the following contents:
+    ```yaml
+    github "dylan/geo"
+    ```
+-   Run the following:
+    ```
+    $ carthage bootstrap
+    ```
 
-### Coming soon, Carthage.
 
 ## Usage
 ```swift

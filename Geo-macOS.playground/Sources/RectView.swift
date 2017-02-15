@@ -1,6 +1,6 @@
 import Foundation
-import Geo
 import Cocoa
+import Geo
 
 public class RectView: NSView {
     var rects: [CGRect]
@@ -15,6 +15,11 @@ public class RectView: NSView {
     }
 
     public override func draw(_ dirtyRect: NSRect) {
+        let originCRect = CGRect(origin: CGPoint.zero, size: CGSize(width: 6, height: 6)).offsetBy(dx: -3, dy: -3)
+        let originC = NSBezierPath(ovalIn: originCRect)
+        NSColor.blue.setFill()
+        originC.fill()
+
         for rect in rects {
             NSColor.red.setStroke()
             let path = NSBezierPath()
